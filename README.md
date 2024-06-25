@@ -13,60 +13,54 @@ Welcome to my portfolio! Here you'll find information about my projects, skills,
 
 ## About Me
 
-Hello! I'm Musa Macheke, a Junior Developer based in Benoni I specialize in frontend, backend, mobile and web development, with a passion for with a passion for creating intuitive and dynamic user experiences. My goal is to leverage technology to solve real-world problems and make a positive impact.
+Hello! I'm Musa Macheke, a Junior Developer based in Pretoria, South Africa. My goal is to leverage technology to solve real-world problems and make a positive impact.
 
 ## Skills
 
 Here are some of the technical skills and tools I have experience with:
 
-- **Programming Languages:** JavaScript, TypeScript, Java17+, C++, C#, Python3+, Swift, Kotlin, Ruby, PHP, Rust, Dart, Objective-C, HTML5, CSS3, Shell Scripting (Bash).
-- **Frameworks and Libraries:** Spring Boot, Django, Node.js, Express.js, ASP.NET, .NET Core, ASP.NET Core, Ruby on Rails, Bootstrap, Sass, Laravel, Angular, React.js, Vue.js, Next.js, Android SDK, iOS SDK, React Native, Xamarin, Flutter, NativeScript, Web3.js, TailwindCSS.
-- **Tools and Platforms:** MySQL, PostgreSQL, MongoDB, Microsoft SQL Server, SQLite, Redis, Firebase Realtime Database, Amazon Web Service, Visual Studio Code, IntelliJ IDEA, Visual Studio, PyCharm, Xcode, Android Studio, Git (Version Control), GitHub, GitLab, Docker, Apache Maven, Gradle, Sentry, npm (Node Package Manager).
+- **Programming Languages:** JavaScript, TypeScript, Dart.
+- **Frameworks and Libraries:** Node.js, React.js, React Native, Flutter, Web3.js, TailwindCSS.
+- **Tools and Platforms:** MongoDB, Firebase Realtime Database, Amazon Web Service, Xcode, Android Studio, Git (Version Control), GitHub, GitLab, Gradle, Render, npm (Node Package Manager).
 - **Other Skills:** Problem-Solving Skills, Adaptability, Attention to Detail, Communication Skills, Problem-solving, Time Management, Professionalism, Safety Awareness, Customer Service Skills, Resilience, Initiative, Ethical Conduct, Documentation Skills, Continuous Learning, Data structures and algorithms, Software security, Proficiency in one or more programming languages.
 
 ## Projects
 
-### M-store
+### Tech Mahindra Ecommerce
 
 - **Description:** An e-commerce fullstack mobile application with features like product listings, shopping cart, storage database and payment integration.
 - **Technologies Used:** Flutter, Dart, NPM, JavaScript, Node.js, MongoDB, Mongoose Web Service, Jest.
-- **Repository:** [GitHub Repo](https://github.com/Musachio/Flutter-ecommerce-mobile)
-- **Live Demo:** [Live Demo](https://drive.usercontent.google.com/download?id=1XD2VVwOuE1YW-o1KTLARKAdi7xSSvcce&export=download&authuser=0)
+- **Repository:** [GitHub Repo](https://github.com/MusaMacheke/Tech_Mahindra_ecommerce)
+- **Live Demo:** [Live Demo](https://drive.usercontent.google.com/download?id=1WtuIU4RVDU0ZkiyZc8ja96seV0Zg_Lz3&export=download&authuser=0)
 
-### Zengo
+### Zengo Wallet
 
-- **Description:** A blockchain wallet, also known as a cryptocurrency wallet, a digital tool that allows users to securely store, manage, and transact with cryptocurrencies.
-- **Technologies Used:** JavaScript, C#, ASP.NET Core, MicrosoftSQL server, TypeScript, Web3.js, Tatum API, Bitquery, Solidity, Chaincode, OpenRefine, Git, Gitbash, Github, Postman, Visual Studio Code, Android Studio, Jest, NPM, Google Cloud API, A2 Hosting, REST API, Apache, Redis 7, Gulp, Redux.js, Node.js, Express.js, HTML5, Tailwind CSS, React Native CLI, MariaDB, Three.js
-- **Repository:** [GitHub Repo](https://github.com/Musachio/Zengo-Ltd.)
+- **Description:** An Android and IOS blockchain wallet, also known as a cryptocurrency wallet, a digital tool that allows users to securely store, manage, and transact with cryptocurrencies.
+- **Technologies Used:** JavaScript, TypeScript, Web3.js, Coinbase, Git, Gitbash, Github, Postman, Visual Studio Code, Android Studio, Jest, NPM, Google Cloud, REST API, Redux.js, Node.js, Express.js, Expo, Tailwind CSS, React Native, MariaDB.
+- **Repository:** [GitHub Repo](https://github.com/MusaMacheke/ZenGo_Wallet)
 - **Live Demo:** [Live Demo](https://zengo.com/)
-
-### MERN Stack Job-Portal
-
-- **Description:** Dynamic platform designed to connect job seekers with employers, leveraging the power of the MERN stack (MongoDB, Express.js, React.js, and Node.js). The portal offers a seamless user experience for both candidates searching for job opportunities and companies looking to find the best talent.
-- **Technologies Used:** MongoDB, Mongoose Web Service, Express.js, React.js, Node.js, JavaScript, Render, Gitbash, Github, Git, Jest, NPM, Visual Studio Code, HTML5, Redux.js, Axios, Nodemon, Dotenv, Bcrypt.js, Jsonwebtoken, CSS3
-- **Repository:** [GitHub Repo](https://github.com/Musachio/Job-Seeker)
-- **Live Demo:** [Live Demo](https://mern-jobportal-rh5a.onrender.com/)
-
-### Ekhaya#36-Tournament
-
-- **Description:** Designed to provide participants, fans, and organizers with all the information, updates, and resources needed to enjoy and engage with the kasi football tournament.
-- **Technologies Used:** JavaScript, Bootstrap, Firebase, CSS3, AOS, Jest, Github, Gitbash, Git, Visual Studio Code.
-- **Repository:** [GitHub Repo](https://github.com/Musachio/Ekhaya-36Tournament-website)
-- **Live Demo:** [Live Demo](https://ekhaya36-tournament.web.app/)
 
 ## Experience
 
-### Junior Fintech Developer at Zengo Ltd.
+### Junior Developer at Tech Mahindra (https://www.techmahindra.com/)
 
-- **Duration:** Jan 2021 - Dec 2023
+- **Duration:** January 2024 - June 2024
 - **Responsibilities:**
-  - Built and developed a blockchain cryptocurrency wallet for mobile and web applications.
-  - Employed innovative technologies, such as sharding and off-chain transactions, that can reduce the load on the blockchain network and improve transaction throughput.
-  - Optimized the wallet’s code to minimize latency and ensured efficient resource utilization.
-  - Created intuitive navigation systems, clear instructions, and responsive designs that work seamlessly across different devices and platforms.
-  - Designed wallets that can interact with different blockchain networks, accommodate various token standards, and support cross-chain transactions.
-  - Minimized the risk of legal complications and built trust among users and stakeholders.
-  - Implemented reliable recovery and backup options, such as mnemonic seed phrases, encrypted backup files, and hardware wallet integrations.
+  - Responsible for developing Android and iOS ecommerce application using Flutter, Dart, JavaScript etc. Then did testing, and debugging the latest development.
+  - Developing and maintaining Node.js using the Express.js framework for backend development.
+  - Used MongoDB for managing and storing user and admin data.
+  - Used Yoco payment gateway accepting transactions.
+
+### Intern Developer at ZenGo (https://zengo.com/)
+
+- **Duration:** Jan 2023 - Dec 2023
+- **Responsibilities:**
+  - Contributed to Zengo Wallet development projects, writing clean and efficient code.
+  - Collaborated with the development team to design and implement software solutions.
+  - Assisted in debugging, testing, and optimizing Zengo Wallet applications.
+  - Brought innovative solutions to software development challenges.
+  - Fostered a collaborative team environment focused on excellence in Zengo Wallet development.
+  - Supported in documenting and presenting software design and solutions.
 
 ## Education
 
@@ -75,11 +69,16 @@ Here are some of the technical skills and tools I have experience with:
 - **Institution:** Boston City Campus
 - **Graduation Year:** 2023
 
+### National Senior Certificate
+
+- **Institution:** Lekamoso Secondary School
+- **Graduation Year:** 2020
+
 ## Contact
 
 Feel free to reach out to me via the following platforms:
 
-- **Email:** mcmachek@gmail.com
-- **LinkedIn:** https://www.linkedin.com/in/musa-macheke-4a713122b
-- **GitHub:** https://github.com/Musachio
-- **Personal Website:** https://react-portfolio-e97ed.web.app/
+- **Email:** musamacheke.01@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/musa-macheke-2abba2315/
+- **GitHub:** https://github.com/MusaMacheke
+- **Personal Website:** https://musa-macheke-portfolio.onrender.com/
