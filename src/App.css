@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 50vmin; /* Increased logo size */
+  pointer-events: none;
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear; /* Decreased animation duration */
+  }
+}
+
+.App-header {
+  background-color: #a7adb3; /* Changed background color */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin); /* Increased minimum font size */
+  color: white;
+}
+
+.App-link {
+  color: #ffc107; /* Changed link color */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Light Theme */
+
+body.light-theme {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Update other styles for light theme */
+
+.App.light-theme {
+  text-align: center;
+  background-color: #ffffff; /* Light background color */
+}
+
+.App-logo.light-theme {
+  height: 50vmin;
+  pointer-events: none;
+  margin-bottom: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo.light-theme {
+      animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+.App-header.light-theme {
+  background-color: #007bff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: white;
+}
+
+.App-link.light-theme {
+  color: #ffc107;
+}
+
+@keyframes App-logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
