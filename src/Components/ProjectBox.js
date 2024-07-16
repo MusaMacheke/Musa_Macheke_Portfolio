@@ -8,11 +8,11 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     
     ZenGo_WalletGithub: "https://github.com/MusaMacheke/ZenGo_Wallet",
     ZenGo_WalletWebsite: "https://zengo.com/",
-    ZenGo_WalletDesc: "React Native, Web3.js, BlockCypher, Coinbase Commerce, Node.js, Express.js, JavaScript, TypeScript, MariaDB, A2 Hosting, ect",
+    ZenGo_WalletDesc: "React Native, Web3.js, BlockCypher, Coinbase Commerce, Node.js, Express.js, JavaScript, TypeScript, MariaDB, A2 Hosting.",
     
     Tech_Mahindra_ecommerceGithub: "https://github.com/MusaMacheke/Tech_Mahindra_ecommerce",
     Tech_Mahindra_ecommerceWebsite: "https://docs.google.com/uc?export=download&id=1WtuIU4RVDU0ZkiyZc8ja96seV0Zg_Lz3",
-    Tech_Mahindra_ecommerceDesc: "Flutter, Express.js, MongoDB, Node.js, Yoco, JavaScript, Dart, ect",
+    Tech_Mahindra_ecommerceDesc: "Flutter, Express.js, MongoDB, Node.js, Yoco, JavaScript, Dart.",
   };
 
   const githubLink = desc[projectName + 'Github'];
