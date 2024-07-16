@@ -12,7 +12,7 @@ const Footer = () => {
         <a href='mailto:musamacheke.01@gmail.com' aria-label="Email"><GrMail /></a>
         <a href='tel:0640668708' aria-label="Phone"><FaPhone /></a>
         {/* <a href='https://wa.me/0640668708' target='_blank' rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a> */}
-        <a href='https://drive.google.com/file/d/1zzJ1jkXuXGoq_bg9BFfi5XfgSlvE_lKG/view?usp=sharing' target='_blank' rel="noopener noreferrer" aria-label="Resume"><FaFilePdf /></a>
+        <a href='https://drive.google.com/file/d/1FVBe4qmoraGuyegHvlvbjcw2cBkcEE2P/view?usp=sharing' target='_blank' rel="noopener noreferrer" aria-label="Resume"><FaFilePdf /></a>
       </div>
     </footer>
   );
