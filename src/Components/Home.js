@@ -47,10 +47,12 @@ const Home = () => {
             product that impacts lives. I want to do work that challenges me as
             a developer & work that I can be proud of.
             <br />
-            <br />I am good in <b>JavaScript</b>, <b>Dart</b>, and <b>TypeScript</b> and I've
-            done 2 projects using <b>React Native</b>, <b>Flutter</b>,{" "}
+            <br />I am good in <b>JavaScript</b>, <b>Php</b>, <b>SQL</b>, <b>Dart</b>, and <b>TypeScript</b> and I've
+            done 3 projects using <b>React Native</b>, <b>PHP with CodeIgniter</b> with <b>MVC framework</b>, <b>Flutter</b>,{" "}
             <b>Node.js</b>, <b>Expo</b>, <b>Express.js</b>, <b>Web3.js</b>,{" "}
-            <b>MongoDB</b>, <b>Coinbase</b>, <b>BlockCypher</b>, and <b>MariaDB</b>.
+            <b>CRUD API</b> with <b>SQLite</b>, <b>RESTful API</b> with <b>MySQL</b>, <b>MongoDB</b>,{" "} 
+            <b>Coinbase</b>, <b>BlockCypher</b>, <b>FileZilla</b>, <b>WorkBench</b>, <b>MySQL</b> and <b>MariaDB</b>.
+            <br />
             <br />I plan to learn <b>latest technologies</b>, <b>more programming languages</b> and <b>other
             frameworks</b> in the near future. <br />
             <br />

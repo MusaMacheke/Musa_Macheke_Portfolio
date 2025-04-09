@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ProjectBox from './ProjectBox';
 import Ekhaya from '../images/Ekhaya.png';
 import Zengo from '../images/Zengo.jpg';
+import FX from '../images/FX.jpg';
 import JobPortal from '../images/jobPortal.png';
 import Ecommerce from '../images/amazon sample.jpg';
 import AOS from 'aos';
@@ -21,7 +22,8 @@ const Projects = () => {
     <div>
       <h1 className='projectHeading' data-aos="fade-up">Professional <b>Projects</b></h1>
       <div className='project' data-aos="fade-up">
-      <ProjectBox projectPhoto={Ecommerce} projectName="Tech_Mahindra_ecommerce" />
+        <ProjectBox projectPhoto={FX} projectName="FamilyXchange" />
+        <ProjectBox projectPhoto={Ecommerce} projectName="Tech_Mahindra_ecommerce" />
         <ProjectBox projectPhoto={Zengo} projectName="ZenGo_Wallet" />
         
       </div>

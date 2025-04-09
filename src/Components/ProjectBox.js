@@ -13,6 +13,10 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     Tech_Mahindra_ecommerceGithub: "https://github.com/MusaMacheke/Tech_Mahindra_ecommerce",
     Tech_Mahindra_ecommerceWebsite: "https://docs.google.com/uc?export=download&id=1WtuIU4RVDU0ZkiyZc8ja96seV0Zg_Lz3",
     Tech_Mahindra_ecommerceDesc: "Flutter, Express.js, MongoDB, Node.js, Yoco, JavaScript, Dart.",
+
+    FamilyXchangeGithub: "https://github.com/MusaMacheke/FX",
+    FamilyXchangeWebsite: "https://familyxchange.com/wp/",
+    FamilyXchangeDesc: "Flutter, Php, SQL, SQLite, Codeigniter, FileZilla, WorkBench, MySQL, Dart.",
   };
 
   const githubLink = desc[projectName + 'Github'];

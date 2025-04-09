@@ -83,7 +83,7 @@ const Nav = () => {
                 <li onClick={closeMenu}><Link to="/" activeClassName="active" onClick={closeMenu}><AiOutlineHome aria-label="Home" /> Home</Link></li>
                 <li onClick={closeMenu}><Link to="/About" activeClassName="active" onClick={closeMenu}><BsPerson aria-label="About" /> About</Link></li>
                 <li onClick={closeMenu}><Link to="/Project" activeClassName="active" onClick={closeMenu}><BsCodeSlash aria-label="Project" /> Projects</Link></li>
-                <li onClick={closeMenu}><Link to="https://drive.google.com/file/d/1FVBe4qmoraGuyegHvlvbjcw2cBkcEE2P/view?usp=sharing" activeClassName="active" onClick={closeMenu}><CgFileDocument aria-label="Resume" /> Resume</Link></li>
+                <li onClick={closeMenu}><Link to="https://drive.google.com/file/d/1l9fihLCaDILcYSgofUZz_hIU6pFs7moc/view?usp=sharing" activeClassName="active" onClick={closeMenu}><CgFileDocument aria-label="Resume" /> Resume</Link></li>
                 <li onClick={toggleTheme} className="theme-icon">
                     {darkTheme ? <BsFillSunFill aria-label="Light Mode" /> : <BsFillMoonFill aria-label="Dark Mode" />}
                 </li>

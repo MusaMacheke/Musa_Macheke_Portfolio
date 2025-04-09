@@ -7,6 +7,7 @@ import {
   FaNpm,
   FaFigma,
   FaBootstrap,
+  
 } from "react-icons/fa";
 import {
   DiNodejs,
@@ -20,6 +21,8 @@ import {
   DiCss3,
   DiHtml5,
   DiDotnet,
+  DiCodeigniter,
+
 } from "react-icons/di";
 import {
   SiExpress,
@@ -73,10 +76,24 @@ import {
   SiGradle,
   SiApachemaven,
   SiVisualstudio,
+  SiMysql,
+  SiFilezilla,
+  // SiWorkbench,
+  SiZoho,
+  SiZoom,
+  
 } from "react-icons/si";
 
 const Skills = ({ skill }) => {
   const icon = {
+    Zoho: <SiZoho />,
+    Filezilla: <SiFilezilla />,
+    Zoom:<SiZoom/>,
+    Bootstrap: <FaBootstrap />,
+    Codeigniter: <DiCodeigniter />,
+    PHP: <DiPhp />,
+    SQLite: <SiSqlite />,
+    MySQL: <SiMysql />,
     Visualstudio: <SiVisualstudio />,
     Apachemaven: <SiApachemaven />,
     Gradle: <SiGradle />,
