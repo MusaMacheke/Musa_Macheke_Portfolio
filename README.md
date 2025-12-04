@@ -28,17 +28,17 @@ Here are some of the technical skills and tools I have experience with:
 
 ### HBROS Meter Landlord
 
-- **Description:** An e-commerce fullstack mobile application with features like product listings, shopping cart, storage database and payment integration.
-- **Technologies Used:** Flutter, Dart, NPM, JavaScript, Node.js, MongoDB, Mongoose Web Service, Jest.
-- **Repository:** [GitHub Repo](https://github.com/MusaMacheke/Tech_Mahindra_ecommerce)
-- **Live Demo:** [Live Demo](https://drive.usercontent.google.com/download?id=1WtuIU4RVDU0ZkiyZc8ja96seV0Zg_Lz3&export=download&authuser=0)
+- **Description:** HBROS Meter Solutions makes unit meter management simple and convenient. With our app, users can monitor electricity usage per unit in real time, allocate and manage costs accurately, and automate billing and reimbursements for landlords and tenants. Our platform provides secure, compliant, and reliable metering solutions, backed by quick and respo...
+- **Technologies Used:** TypeScript, React Native, MySQL, C#, DotNet3 Core, WorkBench, JavaScript.
+- **Repository:** [GitHub Repo](https://github.com/MusaMacheke/HBROS-landlord-app)
+- **Live Demo:** [Live Demo](https://play.google.com/store/apps/details?id=com.musa_hbros09.HBROSmobile&hl=en)
 
 ### Family Xchange
 
-- **Description:** An e-commerce fullstack mobile application with features like product listings, shopping cart, storage database and payment integration.
-- **Technologies Used:** Flutter, Dart, NPM, JavaScript, Node.js, MongoDB, Mongoose Web Service, Jest.
-- **Repository:** [GitHub Repo](https://github.com/MusaMacheke/Tech_Mahindra_ecommerce)
-- **Live Demo:** [Live Demo](https://drive.usercontent.google.com/download?id=1WtuIU4RVDU0ZkiyZc8ja96seV0Zg_Lz3&export=download&authuser=0)
+- **Description:** Family xChange teaches children about the banking system - how to earn money, manage it digitally, and work towards specific goals. It's a safe and practical way to prepare them for the financial challenges they'll face as adults.
+- **Technologies Used:** Flutter, Php, SQL, SQLite, Codeigniter, FileZilla, WorkBench, MySQL, Dart.
+- **Repository:** [GitHub Repo](https://github.com/MusaMacheke/FX)
+- **Live Demo:** [Live Demo](https://familyxchange.com/wp/)
 
 ### Tech Mahindra Ecommerce
 
