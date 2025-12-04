@@ -17,6 +17,10 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     FamilyXchangeGithub: "https://github.com/MusaMacheke/FX",
     FamilyXchangeWebsite: "https://familyxchange.com/wp/",
     FamilyXchangeDesc: "Flutter, Php, SQL, SQLite, Codeigniter, FileZilla, WorkBench, MySQL, Dart.",
+
+    HBROS_LandlordGithub: "https://github.com/MusaMacheke/HBROS-landlord-app",
+    HBROS_LandlordWebsite: "https://play.google.com/store/apps/details?id=com.musa_hbros09.HBROSmobile&hl=en",
+    HBROS_LandlordDesc: "TypeScript, React Native, MySQL, C#, DotNet3 Core, WorkBench, JavaScript.",
   };
 
   const githubLink = desc[projectName + 'Github'];
