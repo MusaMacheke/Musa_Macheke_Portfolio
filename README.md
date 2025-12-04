@@ -26,6 +26,20 @@ Here are some of the technical skills and tools I have experience with:
 
 ## Projects
 
+### HBROS Meter Landlord
+
+- **Description:** An e-commerce fullstack mobile application with features like product listings, shopping cart, storage database and payment integration.
+- **Technologies Used:** Flutter, Dart, NPM, JavaScript, Node.js, MongoDB, Mongoose Web Service, Jest.
+- **Repository:** [GitHub Repo](https://github.com/MusaMacheke/Tech_Mahindra_ecommerce)
+- **Live Demo:** [Live Demo](https://drive.usercontent.google.com/download?id=1WtuIU4RVDU0ZkiyZc8ja96seV0Zg_Lz3&export=download&authuser=0)
+
+### Family Xchange
+
+- **Description:** An e-commerce fullstack mobile application with features like product listings, shopping cart, storage database and payment integration.
+- **Technologies Used:** Flutter, Dart, NPM, JavaScript, Node.js, MongoDB, Mongoose Web Service, Jest.
+- **Repository:** [GitHub Repo](https://github.com/MusaMacheke/Tech_Mahindra_ecommerce)
+- **Live Demo:** [Live Demo](https://drive.usercontent.google.com/download?id=1WtuIU4RVDU0ZkiyZc8ja96seV0Zg_Lz3&export=download&authuser=0)
+
 ### Tech Mahindra Ecommerce
 
 - **Description:** An e-commerce fullstack mobile application with features like product listings, shopping cart, storage database and payment integration.
@@ -41,6 +55,24 @@ Here are some of the technical skills and tools I have experience with:
 - **Live Demo:** [Live Demo](https://zengo.com/)
 
 ## Experience
+
+### Junior Developer at HBROS Meter Solutions (https://hbros.co.za/)
+
+- **Duration:** June 2025 - November 2025
+- **Responsibilities:**
+  - Responsible for developing Android and iOS ecommerce application using Flutter, Dart, JavaScript etc. Then did testing, and debugging the latest development.
+  - Developing and maintaining Node.js using the Express.js framework for backend development.
+  - Used MongoDB for managing and storing user and admin data.
+  - Used Yoco payment gateway accepting transactions.
+
+### Junior Software Engineer at Apptechnics Solutions (https://apptechnix.co.za/)
+
+- **Duration:** June 2024 - May 2025
+- **Responsibilities:**
+  - Responsible for developing Android and iOS ecommerce application using Flutter, Dart, JavaScript etc. Then did testing, and debugging the latest development.
+  - Developing and maintaining Node.js using the Express.js framework for backend development.
+  - Used MongoDB for managing and storing user and admin data.
+  - Used Yoco payment gateway accepting transactions.
 
 ### Junior Developer at Tech Mahindra (https://www.techmahindra.com/)
 
