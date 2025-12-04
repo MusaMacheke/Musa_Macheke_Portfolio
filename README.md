@@ -19,10 +19,12 @@ Hello! I'm Musa Macheke, a Junior Developer based in Pretoria, South Africa. My 
 
 Here are some of the technical skills and tools I have experience with:
 
-- **Programming Languages:** JavaScript, TypeScript, Dart.
-- **Frameworks and Libraries:** Node.js, React.js, React Native, Flutter, Web3.js, TailwindCSS.
-- **Tools and Platforms:** MongoDB, Firebase Realtime Database, Amazon Web Service, Xcode, Android Studio, Git (Version Control), GitHub, GitLab, Gradle, Render, npm (Node Package Manager).
-- **Other Skills:** Problem-Solving Skills, Adaptability, Attention to Detail, Communication Skills, Problem-solving, Time Management, Professionalism, Safety Awareness, Customer Service Skills, Resilience, Initiative, Ethical Conduct, Documentation Skills, Continuous Learning, Data structures and algorithms, Software security, Proficiency in one or more programming languages.
+- **Languages:** C#, TypeScript, JavaScript, Dart, PHP, SQL.
+- **Frontend / Mobile:** React Native, Flutter.
+- **Backend:** .NET (C#), Node.js, Express.js, PHP (CodeIgniter).
+- **Databases:** MongoDB, MySQL, SQLite, MariaDB.
+- **Payments & APIs:** Yoco, Google Play Billing, Apple In-App Purchases, Coinbase, Web3.js, RESTful APIs.
+- **Tools & Platforms:** Git, GitHub, FileZilla, MySQL Workbench, A2 Hosting, Android, iOS
 
 ## Projects
 
@@ -60,23 +62,23 @@ Here are some of the technical skills and tools I have experience with:
 
 - **Duration:** June 2025 - November 2025
 - **Responsibilities:**
-  - Responsible for developing Android and iOS ecommerce application using Flutter, Dart, JavaScript etc. Then did testing, and debugging the latest development.
-  - Developing and maintaining Node.js using the Express.js framework for backend development.
-  - Used MongoDB for managing and storing user and admin data.
-  - Used Yoco payment gateway accepting transactions.
+  - Developed cross-platform mobile apps using React Native (TypeScript) and C#/.NET backend for utility metering operations.
+  - Built RESTful APIs supporting real-time data sync, user management, and field workflows.
+  - Collaborated closely with engineering and operations teams in an agile, on-site setting communicating requirements and iterating quickly on feedback.
+  - Delivered responsive UIs with robust frontend-backend integration.
 
 ### Junior Software Engineer at Apptechnics Solutions (https://apptechnix.co.za/)
 
 - **Duration:** June 2024 - May 2025
 - **Responsibilities:**
-  - Responsible for developing Android and iOS ecommerce application using Flutter, Dart, JavaScript etc. Then did testing, and debugging the latest development.
-  - Developing and maintaining Node.js using the Express.js framework for backend development.
-  - Used MongoDB for managing and storing user and admin data.
-  - Used Yoco payment gateway accepting transactions.
+  - Built and shipped Family Xchange, a dual-platform mobile app using Flutter and Dart.
+  - Engineered a PHP (CodeIgniter) backend with MySQL/SQLite, writing efficient SQL queries for complex family/child data models.
+  - Integrated Google Play Billing and Apple In-App Purchases for recurring subscriptions.
+  - Managed full deployment cycle: tested, debugged, and published to both Google Play and App Store—ensuring reliability and user satisfaction.
 
 ### Junior Developer at Tech Mahindra (https://www.techmahindra.com/)
 
-- **Duration:** January 2024 - June 2024
+- **Duration:** January 2024 - May 2024
 - **Responsibilities:**
   - Responsible for developing Android and iOS ecommerce application using Flutter, Dart, JavaScript etc. Then did testing, and debugging the latest development.
   - Developing and maintaining Node.js using the Express.js framework for backend development.
@@ -99,18 +101,17 @@ Here are some of the technical skills and tools I have experience with:
 ### Diploma in Systems Development
 
 - **Institution:** Boston City Campus
-- **Graduation Year:** 2023
+- **Year:** 2022
 
 ### National Senior Certificate
 
 - **Institution:** Lekamoso Secondary School
-- **Graduation Year:** 2020
+- **Year:** 2019
 
 ## Contact
 
 Feel free to reach out to me via the following platforms:
 
 - **Email:** musamacheke.01@gmail.com
-- **LinkedIn:** https://www.linkedin.com/in/musa-macheke-2abba2315/
 - **GitHub:** https://github.com/MusaMacheke
 - **Personal Website:** https://musa-macheke-portfolio.onrender.com/
