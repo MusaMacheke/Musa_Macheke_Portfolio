@@ -22,6 +22,7 @@ import {
   DiHtml5,
   DiDotnet,
   DiCodeigniter,
+  
 
 } from "react-icons/di";
 import {
@@ -81,11 +82,14 @@ import {
   // SiWorkbench,
   SiZoho,
   SiZoom,
-  
+  // SiCsharp,
+  SiDotnet
 } from "react-icons/si";
 
 const Skills = ({ skill }) => {
   const icon = {
+    // Csharp: <SiCsharp />,
+    Dotnet: <SiDotnet />,
     Zoho: <SiZoho />,
     Filezilla: <SiFilezilla />,
     Zoom:<SiZoom/>,
@@ -179,3 +183,4 @@ const Skills = ({ skill }) => {
 };
 
 export default Skills;
+
