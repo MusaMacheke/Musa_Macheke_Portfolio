@@ -26,9 +26,9 @@ const About = () => {
           </h1>
           <p>
             Hi, my name is <b>Musa Macheke</b> and I'm from Pretoria, South
-            Africa. I'm a <b>junior software engineer</b> with over <b>2+</b> years of
+            Africa. I'm a <b>junior developer</b> with over <b>2+</b> years of
             work experience. <br />
-            <br />I worked as a <b>Junior software engineer</b>, <b>Junior developer</b>, and <b>Intern developer</b> at companies such as <a href='https://apptechnix.co.za/' aria-label="Apptechnics Mobile App Solutions"><b>Apptechnics Mobile App Solutions</b></a>, <a href='https://www.techmahindra.com/' aria-label="Tech Mahindra"><b>Tech Mahindra</b></a> and <a href='https://zengo.com/' aria-label="ZenGo"><b>ZenGo</b></a>. I love to create
+            <br />I worked as a <b>Junior software engineer</b>, <b>Junior developer</b>, and <b>Intern developer</b> at companies such as <a href='https://hbros.co.za/' aria-label="HBROS Meter Solutions"><b>HBROS Meter Solutions</b></a>, <a href='https://apptechnix.co.za/' aria-label="Apptechnics Mobile App Solutions"><b>Apptechnics Mobile App Solutions</b></a>, <a href='https://www.techmahindra.com/' aria-label="Tech Mahindra"><b>Tech Mahindra</b></a> and <a href='https://zengo.com/' aria-label="ZenGo"><b>ZenGo</b></a>. I love to create
             original projects with beautiful designs, you can check out some of
             my work in the projects section.
             <br />
@@ -53,6 +53,8 @@ const About = () => {
       
       <h1 className="SkillsHeading" data-aos="fade-up">Professional Skillset</h1>
       <div className="skills" data-aos="fade-up">
+        <Skills skill="Dotnet" />
+        <Skills skill="Csharp" />
         <Skills skill="Filezilla" />
         <Skills skill="Zoom" />
         <Skills skill="Zoho" />
