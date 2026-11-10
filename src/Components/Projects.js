@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 import ProjectBox from './ProjectBox';
-import Ekhaya from '../images/Ekhaya.png';
-import Zengo from '../images/Zengo.jpg';
 import FX from '../images/FX.jpg';
-import JobPortal from '../images/jobPortal.png';
-import Ecommerce from '../images/amazon sample.jpg';
 import HBROS from '../images/HBROS.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,17 +16,19 @@ const Projects = () => {
   }, []);
 
   return (
-    <div>
-      <h1 className='projectHeading' data-aos="fade-up">Professional <b>Projects</b></h1>
+    <main className="projects-page">
+      <header className="projects-intro" data-aos="fade-up">
+        <p className="section-kicker">Selected work · 02 projects</p>
+        <h1 className='projectHeading'>Products built for <b>people.</b></h1>
+        <p className="projects-lede">Two mobile product projects focused on property services and helping families organise everyday responsibilities.</p>
+      </header>
       <div className='project' data-aos="fade-up">
         <ProjectBox projectPhoto={HBROS} projectName="HBROS_Landlord" />
         <ProjectBox projectPhoto={FX} projectName="FamilyXchange" />
-        <ProjectBox projectPhoto={Ecommerce} projectName="Tech_Mahindra_ecommerce" />
-        <ProjectBox projectPhoto={Zengo} projectName="ZenGo_Wallet" />
 
         
       </div>
-    </div>
+    </main>
   );
 }
 

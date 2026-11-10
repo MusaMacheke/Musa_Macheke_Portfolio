@@ -7,6 +7,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../index.css';
 
+const contactEmail = 'mailto:musamacheke.01@gmail.com?subject=Software%20Development%20Opportunity&body=Hello%20Musa%2C%0A%0AI%20reviewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20software%20development%20opportunity.%0A%0AHere%20are%20the%20details%3A%0A%0A%5BPlease%20share%20the%20role%2C%20project%2C%20or%20opportunity%20details%5D%0A%0AThank%20you%2C%0A%5BYour%20name%5D';
+
 const About = () => {
   useEffect(() => {
     AOS.init({
@@ -21,20 +23,16 @@ const About = () => {
     <>
       <div className="AboutPage">
         <div className="AboutText" data-aos="fade-right">
+          <p className="section-kicker">Professional profile</p>
           <h1 className="AboutTextHeading">
-            Get to <b>know</b> me!
+            Software development with <b>purpose.</b>
           </h1>
           <p>
-            Hi, my name is <b>Musa Macheke</b> and I'm from Pretoria, South
-            Africa. I'm a <b>junior developer</b> with over <b>2+</b> years of
-            work experience. <br />
-            <br />I worked as a <b>Junior software engineer</b>, <b>Junior developer</b>, and <b>Intern developer</b> at companies such as <a href='https://hbros.co.za/' aria-label="HBROS Meter Solutions"><b>HBROS Meter Solutions</b></a>, <a href='https://apptechnix.co.za/' aria-label="Apptechnics Mobile App Solutions"><b>Apptechnics Mobile App Solutions</b></a>, <a href='https://www.techmahindra.com/' aria-label="Tech Mahindra"><b>Tech Mahindra</b></a> and <a href='https://zengo.com/' aria-label="ZenGo"><b>ZenGo</b></a>. I love to create
-            original projects with beautiful designs, you can check out some of
-            my work in the projects section.
+            I am <b>Musa Macheke</b>, a software developer based in Pretoria, South Africa, with 3+ years of professional experience. From January 2023 to December 2024, I worked as an <b>Intern Software Engineer</b> at <a href='https://apptechnix.co.za/' aria-label="Apptechnics Mobile and Web Solutions"><b>Apptechnics Mobile and Web Solutions</b></a>, contributing to the FamilyXchange project. From January 2025 to October 2026, I worked as a <b>Junior Front-End Developer</b> at <a href='https://hbros.co.za/' aria-label="HBROS Meter Solutions"><b>HBROS Meter Solutions</b></a>, contributing to the HBROS Mobile Landlord project.
             <br />
-            <br />I am <b>open</b> to new collaborations or work where I can
-            contribute and grow. Feel free to connect with me, links are in the
-            footer.
+            <br />My experience spans web and mobile application development, frontend engineering, APIs, and database systems. I use technologies including <b>JavaScript</b>, <b>TypeScript</b>, <b>C#</b>, <b>PHP</b>, <b>Dart</b>, <b>React Native</b>, <b>.NET</b>, and <b>Flutter</b> to build and maintain software for practical business and user needs.
+            <br />
+            <br />I am seeking software developer opportunities across Gauteng, including Johannesburg and Pretoria, as well as remote roles in South Africa. I welcome client projects and professional collaborations. Please review my selected projects or <a href={contactEmail}><b>contact me by email</b></a> to discuss an opportunity.
             <br />
           </p>
 

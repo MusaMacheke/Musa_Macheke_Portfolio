@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson, BsCodeSlash, BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
-import { CgFeed, CgFileDocument } from "react-icons/cg";
+import { CgFileDocument } from "react-icons/cg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../index.css';
+import resumePdf from '../Resume_Current.pdf';
 
-const Nav = () => {
+const Nav = ({ toggleTheme, theme = 'dark' }) => {
     const [navbarBlur, setNavbarBlur] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [darkTheme, setDarkTheme] = useState(true); // Set dark theme as default
     const navRef = useRef(null);
 
     useEffect(() => {
@@ -60,32 +60,26 @@ const Nav = () => {
         };
     }, [menuOpen, handleClickOutside]);
 
-    const toggleTheme = () => {
-        setDarkTheme(!darkTheme);
-        if (!darkTheme) {
-            document.body.classList.add('light-theme'); // Add light theme class
-        } else {
-            document.body.classList.remove('light-theme'); // Remove light theme class
-        }
-    };
-
     return (
         <nav className={navbarBlur ? 'Navbar blur' : 'Navbar'} data-aos="fade-down">
-            <h1 title='Reload' onClick={() => window.location.reload(true)} className='Logo'>MM</h1>
+            <Link title='Musa Macheke home' to="/" className='Logo' onClick={closeMenu}>MM</Link>
 
-            <div className='Hamburger' onClick={toggleMenu}>
+            <button className='Hamburger' onClick={toggleMenu} aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={menuOpen}>
                 <span className='bar'></span>
                 <span className='bar'></span>
                 <span className='bar'></span>
-            </div>
+            </button>
 
             <ul className={menuOpen ? 'NavbarLinks showNavbar' : 'NavbarLinks'} ref={navRef}>
-                <li onClick={closeMenu}><Link to="/" activeClassName="active" onClick={closeMenu}><AiOutlineHome aria-label="Home" /> Home</Link></li>
-                <li onClick={closeMenu}><Link to="/About" activeClassName="active" onClick={closeMenu}><BsPerson aria-label="About" /> About</Link></li>
-                <li onClick={closeMenu}><Link to="/Project" activeClassName="active" onClick={closeMenu}><BsCodeSlash aria-label="Project" /> Projects</Link></li>
-                <li onClick={closeMenu}><Link to="https://drive.google.com/file/d/11HLe31nba1wIFeEvyw_Of6K2RKLHvDXz/view?usp=sharing" activeClassName="active" onClick={closeMenu}><CgFileDocument aria-label="Resume" /> Resume</Link></li>
-                <li onClick={toggleTheme} className="theme-icon">
-                    {darkTheme ? <BsFillSunFill aria-label="Light Mode" /> : <BsFillMoonFill aria-label="Dark Mode" />}
+                <li><NavLink to="/" end onClick={closeMenu}><AiOutlineHome /> Home</NavLink></li>
+                <li><NavLink to="/About" onClick={closeMenu}><BsPerson /> About</NavLink></li>
+                <li><NavLink to="/Project" onClick={closeMenu}><BsCodeSlash /> Projects</NavLink></li>
+                <li><a href={resumePdf} target="_blank" rel="noopener noreferrer" onClick={closeMenu}><CgFileDocument /> Resume</a></li>
+                <li>
+                    <button type="button" className="theme-toggle" onClick={toggleTheme} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}>
+                    {theme === 'dark' ? <BsFillSunFill aria-hidden="true" /> : <BsFillMoonFill aria-hidden="true" />}
+                    <span className="theme-toggle-label">{theme === 'dark' ? 'Light' : 'Dark'}</span>
+                    </button>
                 </li>
             </ul>
         </nav>

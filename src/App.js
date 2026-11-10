@@ -8,8 +8,6 @@ import Resume from "./Components/Resume";
 import Project from "./Components/Projects";
 import Feedback from "./Components/Feedback";
 import MoveToTop from "./Components/MoveToTop";
-import Lottie from  "lottie-react";
-import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
 import './App.css';  // Ensure this CSS file includes the theme styles
 
@@ -43,10 +41,7 @@ function App() {
         </div>
       ) : (
         <div className={theme === 'light' ? 'light-theme' : 'dark-theme'}>
-          <Lottie className="bg" animationData={nightsky} loop={true} />
-          <Lottie className="bgtwo" animationData={nightsky} loop={true} />
-          <Lottie className="bgtemp" animationData={nightsky} loop={true} />
-
+          <div className="ambient-grid" aria-hidden="true" />
           <Nav toggleTheme={toggleTheme} theme={theme} />
           <MoveToTop />
 

@@ -77,27 +77,22 @@ import {
   SiGradle,
   SiApachemaven,
   SiVisualstudio,
-  SiMysql,
   SiFilezilla,
   // SiWorkbench,
   SiZoho,
   SiZoom,
   // SiCsharp,
-  SiDotnet
 } from "react-icons/si";
 
 const Skills = ({ skill }) => {
   const icon = {
     // Csharp: <SiCsharp />,
-    Dotnet: <SiDotnet />,
     Zoho: <SiZoho />,
     Filezilla: <SiFilezilla />,
     Zoom:<SiZoom/>,
     Bootstrap: <FaBootstrap />,
     Codeigniter: <DiCodeigniter />,
     PHP: <DiPhp />,
-    SQLite: <SiSqlite />,
-    MySQL: <SiMysql />,
     Visualstudio: <SiVisualstudio />,
     Apachemaven: <SiApachemaven />,
     Gradle: <SiGradle />,
@@ -141,7 +136,6 @@ const Skills = ({ skill }) => {
     React: <FaReact />,
     Java: <DiJava />,
     Ruby: <DiRuby />,
-    PHP: <DiPhp />,
     Jquery: <SiJquery />,
     Angular: <SiAngular />,
     Vue: <SiVuedotjs />,
@@ -156,7 +150,6 @@ const Skills = ({ skill }) => {
     Github: <FaGithub />,
     Npm: <FaNpm />,
     Figma: <FaFigma />,
-    Bootstrap: <FaBootstrap />,
     Vercel: <SiVercel />,
     Firebase: <SiFirebase />,
     Css: <DiCss3 />,
