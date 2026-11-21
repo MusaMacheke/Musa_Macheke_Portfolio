@@ -1,0 +1,694 @@
+/* ==========================================================================
+   Copy-driven sections
+   Additive to index.css — all colour, spacing and type tokens come from there.
+   ========================================================================== */
+
+.hero-intro {
+  font-weight: 400;
+}
+
+.AboutText p + p {
+  margin-top: 18px;
+}
+
+/* --------------------------------------------------------------------------
+   Shared section scaffolding
+   -------------------------------------------------------------------------- */
+
+.certifications-section,
+.detail-section,
+.case-studies,
+.resume-ats {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--page-x);
+}
+
+.detail-section {
+  padding-top: clamp(36px, 5vw, 64px);
+}
+
+.detail-section-head {
+  margin-bottom: 26px;
+}
+
+.detail-section-head .section-kicker {
+  margin-bottom: 8px;
+}
+
+.certifications-heading {
+  margin: 0;
+  color: var(--ink);
+  font: 600 clamp(26px, 3.4vw, 36px)/1.15 var(--display-font);
+  letter-spacing: -1px;
+}
+
+.detail-subheading {
+  margin: 20px 0 10px;
+  color: var(--accent);
+  font: 700 11px/1.5 var(--display-font);
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   Certification cards
+   -------------------------------------------------------------------------- */
+
+.certifications-section {
+  padding-top: clamp(36px, 5vw, 64px);
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+  gap: 14px;
+}
+
+.cert-card {
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-align: left;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.cert-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+  transform: translateY(-3px);
+}
+
+.cert-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.cert-tag {
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cert-date {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.cert-card h3 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font: 600 16px/1.4 var(--display-font);
+}
+
+.cert-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.cert-issuer {
+  color: var(--ink) !important;
+  font-weight: 600;
+}
+
+.cert-detail {
+  margin-top: 10px !important;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  font-size: 11.5px !important;
+  line-height: 1.7 !important;
+}
+
+/* --------------------------------------------------------------------------
+   Experience, education, training
+   -------------------------------------------------------------------------- */
+
+.experience-detailed,
+.edu-grid,
+.skill-category-grid,
+.soft-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 16px;
+}
+
+.job-card,
+.edu-card,
+.soft-card,
+.skill-category {
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-align: left;
+  transition: border-color 0.2s ease;
+}
+
+.job-card:hover,
+.edu-card:hover,
+.skill-category:hover,
+.soft-card:hover {
+  border-color: var(--line-strong);
+}
+
+.job-header h3 {
+  margin: 0 0 6px;
+  color: var(--ink);
+  font: 600 17px/1.35 var(--display-font);
+}
+
+.job-header a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.job-header a:hover {
+  text-decoration: underline;
+}
+
+.job-period {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.job-overview {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.job-bullets {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.job-bullets li {
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.8;
+}
+
+.job-bullets li + li {
+  margin-top: 9px;
+}
+
+.job-bullets li::marker {
+  color: var(--accent);
+}
+
+.job-tech {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.job-tech span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.edu-card h3,
+.skill-category h3,
+.soft-card h4 {
+  color: var(--accent);
+}
+
+.edu-card h3 {
+  margin: 0 0 6px;
+  font: 600 17px/1.35 var(--display-font);
+}
+
+.edu-card p {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.8;
+}
+
+.training-list {
+  max-width: 900px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.training-list li {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.training-list li + li {
+  margin-top: 12px;
+}
+
+.training-list li::marker {
+  color: var(--accent);
+}
+
+.training-list strong {
+  color: var(--ink);
+}
+
+/* --------------------------------------------------------------------------
+   Technical and soft skills
+   -------------------------------------------------------------------------- */
+
+.skill-category h3 {
+  margin: 0 0 14px;
+  font: 600 15px/1.4 var(--display-font);
+  letter-spacing: 0;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.chip {
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--surface-raised) 50%, transparent);
+  color: var(--ink);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.soft-heading {
+  margin: 36px 0 14px;
+}
+
+.soft-card h4 {
+  margin: 0 0 8px;
+  font: 600 15px/1.4 var(--display-font);
+  letter-spacing: 0;
+}
+
+.soft-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.SkillsHeading {
+  margin-top: clamp(52px, 7vw, 80px);
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   Project case studies
+   -------------------------------------------------------------------------- */
+
+.case-studies {
+  padding-top: clamp(40px, 6vw, 72px);
+}
+
+.case-study {
+  padding: clamp(32px, 5vw, 46px) 0;
+  border-top: 1px solid var(--line);
+}
+
+.case-study:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.case-study-header {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.case-study-index {
+  color: var(--accent);
+  font: 600 14px/1 var(--display-font);
+  letter-spacing: 1px;
+}
+
+.case-study h2 {
+  margin: 0;
+  color: var(--ink);
+  font: 600 clamp(28px, 3.6vw, 40px)/1.1 var(--display-font);
+  letter-spacing: -1.2px;
+}
+
+.case-overview {
+  max-width: 800px;
+  margin: 0 0 22px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.case-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 28px;
+  padding: 0;
+  list-style: none;
+}
+
+.case-stack li {
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 26px;
+}
+
+.case-block {
+  text-align: left;
+}
+
+.case-block h3 {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font: 700 11px/1.5 var(--display-font);
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.case-block p,
+.case-block li {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.case-block p {
+  margin: 0;
+}
+
+.case-block ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.case-block li + li {
+  margin-top: 8px;
+}
+
+.case-block li::marker {
+  color: var(--accent);
+}
+
+.case-impact,
+.case-lesson {
+  margin-top: 18px;
+  padding: 20px 22px;
+  border: 1px solid color-mix(in srgb, var(--accent) 38%, transparent);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+  text-align: left;
+}
+
+.case-lesson {
+  margin-top: 12px;
+  border-color: var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: transparent;
+}
+
+.case-impact h3,
+.case-lesson h3 {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font: 700 11px/1.5 var(--display-font);
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.case-lesson h3 {
+  color: var(--muted);
+}
+
+.case-impact p,
+.case-lesson p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.case-lesson p {
+  font-style: italic;
+}
+
+.case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.case-links a {
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.case-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.case-features {
+  margin: 0 0 28px;
+  text-align: left;
+}
+
+.case-features > h3 {
+  margin: 0 0 14px;
+  color: var(--accent);
+  font: 700 11px/1.5 var(--display-font);
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
+.case-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 14px;
+}
+
+.case-feature {
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--surface);
+}
+
+.case-feature h4 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font: 600 16px/1.4 var(--display-font);
+}
+
+.case-feature p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* --------------------------------------------------------------------------
+   Contact CTA in the footer
+   -------------------------------------------------------------------------- */
+
+.contact-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-top: 14px;
+  padding: 0 18px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.contact-cta:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.footer-contact-detail {
+  margin-top: 14px !important;
+  font-size: 11px !important;
+}
+
+.footer-contact-detail a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.footer-contact-detail a:hover {
+  color: var(--accent);
+}
+
+/* --------------------------------------------------------------------------
+   ATS-ready résumé text
+   -------------------------------------------------------------------------- */
+
+.resume-ats {
+  margin-top: clamp(48px, 7vw, 80px);
+  padding-bottom: clamp(48px, 7vw, 80px);
+  text-align: left;
+}
+
+.resume-ats-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.resume-ats-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font: 600 24px/1.2 var(--display-font);
+}
+
+.resume-ats-note {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.resume-copy-button {
+  min-height: 38px;
+  padding: 0 15px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.resume-copy-button:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.resume-ats pre {
+  margin: 0;
+  padding: 24px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted);
+  font: 12px/1.8 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive refinements
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 700px) {
+  .detail-section,
+  .certifications-section,
+  .case-studies,
+  .resume-ats {
+    padding-right: var(--page-x);
+    padding-left: var(--page-x);
+  }
+
+  .job-card,
+  .edu-card,
+  .soft-card,
+  .skill-category,
+  .cert-card {
+    padding: 18px;
+  }
+
+  .case-block p,
+  .case-block li,
+  .case-impact p,
+  .case-lesson p {
+    font-size: 13px;
+  }
+
+  .case-feature {
+    padding: 16px;
+  }
+
+  .case-feature p {
+    font-size: 12.5px;
+  }
+
+  .resume-ats pre {
+    padding: 16px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 420px) {
+  .cert-card-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .case-study-header {
+    gap: 8px;
+  }
+
+  .case-stack li {
+    font-size: 10px;
+  }
+
+  .resume-ats-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

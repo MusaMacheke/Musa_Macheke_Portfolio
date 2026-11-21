@@ -15,6 +15,11 @@ function App() {
   const [Loading, SetLoading] = useState(true);
   const [theme, setTheme] = useState('dark'); // Default theme is dark
 
+  // Apply the theme to the document root so the page background follows it too.
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+  }, [theme]);
+
   useEffect(() => {
     SetLoading(true);
 
@@ -32,7 +37,7 @@ function App() {
       {Loading ? (
         <div className="loader">
           <HashLoader
-            color={'#0085d7'}
+            color={'#c1f36b'}
             loading={true}
             size={100}
             aria-label="Loading Spinner"

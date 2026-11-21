@@ -42,6 +42,15 @@ const Nav = ({ toggleTheme, theme = 'dark' }) => {
         setMenuOpen(false);
     };
 
+    useEffect(() => {
+        if (!menuOpen) return;
+        const handleKeyDown = (event) => {
+            if (event.key === 'Escape') closeMenu();
+        };
+        document.addEventListener('keydown', handleKeyDown);
+        return () => document.removeEventListener('keydown', handleKeyDown);
+    }, [menuOpen]);
+
     const handleClickOutside = useCallback((event) => {
         if (navRef.current && !navRef.current.contains(event.target)) {
             closeMenu();
@@ -64,13 +73,13 @@ const Nav = ({ toggleTheme, theme = 'dark' }) => {
         <nav className={navbarBlur ? 'Navbar blur' : 'Navbar'} data-aos="fade-down">
             <Link title='Musa Macheke home' to="/" className='Logo' onClick={closeMenu}>MM</Link>
 
-            <button className='Hamburger' onClick={toggleMenu} aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={menuOpen}>
+            <button className='Hamburger' onClick={toggleMenu} aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={menuOpen} aria-controls='primary-navigation'>
                 <span className='bar'></span>
                 <span className='bar'></span>
                 <span className='bar'></span>
             </button>
 
-            <ul className={menuOpen ? 'NavbarLinks showNavbar' : 'NavbarLinks'} ref={navRef}>
+            <ul id='primary-navigation' className={menuOpen ? 'NavbarLinks showNavbar' : 'NavbarLinks'} ref={navRef}>
                 <li><NavLink to="/" end onClick={closeMenu}><AiOutlineHome /> Home</NavLink></li>
                 <li><NavLink to="/About" onClick={closeMenu}><BsPerson /> About</NavLink></li>
                 <li><NavLink to="/Project" onClick={closeMenu}><BsCodeSlash /> Projects</NavLink></li>

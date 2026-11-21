@@ -7,8 +7,9 @@ const Typed = () => {
       <Typewriter
         options={{
           strings: [
-            'Junior Frontend Developer',
-            'Intern Software Engineer',
+            'Software Developer',
+            'Mobile & Full-Stack Developer',
+            'Oracle Java SE 17 Certified',
           ],
           autoStart: true,
           loop: true,
@@ -17,7 +18,7 @@ const Typed = () => {
         }}
       />
       <noscript>
-        <p>web developer, frontend developer, mobile developer, backend developer, software developer, freelancer</p>
+        <p>software developer, mobile developer, full-stack developer, Java developer</p>
       </noscript>
     </section>
   );

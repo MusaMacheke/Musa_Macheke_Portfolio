@@ -6,8 +6,18 @@ import Coder from '../LottieFiles/coder.json';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../index.css';
-
-const contactEmail = 'mailto:musamacheke.01@gmail.com?subject=Software%20Development%20Opportunity&body=Hello%20Musa%2C%0A%0AI%20reviewed%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20software%20development%20opportunity.%0A%0AHere%20are%20the%20details%3A%0A%0A%5BPlease%20share%20the%20role%2C%20project%2C%20or%20opportunity%20details%5D%0A%0AThank%20you%2C%0A%5BYour%20name%5D';
+import {
+  aboutHeading,
+  aboutParagraphs,
+  certifications,
+  education,
+  experience,
+  skillIcons,
+  softSkills,
+  technicalSkills,
+  training,
+} from '../content/siteCopy';
+import '../content/Content.css';
 
 const About = () => {
   useEffect(() => {
@@ -22,23 +32,15 @@ const About = () => {
   return (
     <>
       <div className="AboutPage">
-        <div className="AboutText" data-aos="fade-right">
+        <div className="AboutText" data-aos="fade-up">
           <p className="section-kicker">Professional profile</p>
           <h1 className="AboutTextHeading">
-            Software development with <b>purpose.</b>
+            {aboutHeading[0]} <b>{aboutHeading[1]}</b>
           </h1>
-          <p>
-            I am <b>Musa Macheke</b>, a software developer based in Pretoria, South Africa, with 3+ years of professional experience. From January 2023 to December 2024, I worked as an <b>Intern Software Engineer</b> at <a href='https://apptechnix.co.za/' aria-label="Apptechnics Mobile and Web Solutions"><b>Apptechnics Mobile and Web Solutions</b></a>, contributing to the FamilyXchange project. From January 2025 to October 2026, I worked as a <b>Junior Front-End Developer</b> at <a href='https://hbros.co.za/' aria-label="HBROS Meter Solutions"><b>HBROS Meter Solutions</b></a>, contributing to the HBROS Mobile Landlord project.
-            <br />
-            <br />My experience spans web and mobile application development, frontend engineering, APIs, and database systems. I use technologies including <b>JavaScript</b>, <b>TypeScript</b>, <b>C#</b>, <b>PHP</b>, <b>Dart</b>, <b>React Native</b>, <b>.NET</b>, and <b>Flutter</b> to build and maintain software for practical business and user needs.
-            <br />
-            <br />I am seeking software developer opportunities across Gauteng, including Johannesburg and Pretoria, as well as remote roles in South Africa. I welcome client projects and professional collaborations. Please review my selected projects or <a href={contactEmail}><b>contact me by email</b></a> to discuss an opportunity.
-            <br />
-          </p>
-
+          {aboutParagraphs.map((paragraph) => <p key={paragraph.slice(0, 40)}>{paragraph}</p>)}
         </div>
 
-        <div data-aos="fade-left">
+        <div data-aos="fade-up">
           <Tilt>
             <Lottie
               className="illustration"
@@ -48,49 +50,112 @@ const About = () => {
           </Tilt>
         </div>
       </div>
-      
-      <h1 className="SkillsHeading" data-aos="fade-up">Professional Skillset</h1>
-      <div className="skills" data-aos="fade-up">
-        <Skills skill="Dotnet" />
-        <Skills skill="Csharp" />
-        <Skills skill="Filezilla" />
-        <Skills skill="Zoom" />
-        <Skills skill="Zoho" />
-        <Skills skill="Bootstrap" />
-        <Skills skill="Codeigniter" />
-        <Skills skill="PHP" />
-        <Skills skill="SQLite" />
-        <Skills skill="MySQL" />
-        <Skills skill="Dart" />
-        <Skills skill="Javascript" />
-        <Skills skill="Css" />
-        <Skills skill="Html" />
-        <Skills skill="Typescript" />
-        <Skills skill="Web3" />
-        <Skills skill="Flutter" />
-        <Skills skill="AndroidSDK" />
-        <Skills skill="IOS" />
-        <Skills skill="Redux" />
-        <Skills skill="Tailwind" />
-        <Skills skill="Node" />
-        <Skills skill="Express" />
-        <Skills skill="Expo" />
-        <Skills skill="React" />
-        <Skills skill="MariaDB" />
-        <Skills skill="MongoDb" />
-        <Skills skill="Firebase" />
-        <Skills skill="Visualstudio" />
-        <Skills skill="Jest" />
-        <Skills skill="Git" />
-        <Skills skill="Npm" />
-        <Skills skill="Postman" />
-        <Skills skill="Stackoverflow" />
-        <Skills skill="AndroidStudio" />
-        <Skills skill="VSCode" />
-        <Skills skill="GoogleCloud" />
-        <Skills skill="Gradle" />
-        <Skills skill="Github" />
-      </div>
+
+      <section className="detail-section" aria-labelledby="experience-heading">
+        <div className="detail-section-head">
+          <p className="section-kicker">Where I have worked</p>
+          <h2 id="experience-heading" className="certifications-heading">Professional experience</h2>
+        </div>
+        <div className="experience-detailed">
+          {experience.map((job) => (
+            <article className="job-card" key={job.company} data-aos="fade-up">
+              <header className="job-header">
+                <h3>{job.role} — <a href={job.companyUrl} target="_blank" rel="noopener noreferrer">{job.company}</a></h3>
+                <p className="job-period">{job.period} · {job.location} · Project: {job.project}</p>
+              </header>
+              <p className="job-overview">{job.overview}</p>
+              <h4 className="detail-subheading">What I did</h4>
+              <ul className="job-bullets">
+                {job.bullets.map((bullet) => <li key={bullet.slice(0, 45)}>{bullet}</li>)}
+              </ul>
+              <p className="job-tech"><span>Technologies:</span> {job.tech.join(' · ')}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="detail-section" aria-labelledby="education-heading">
+        <div className="detail-section-head">
+          <p className="section-kicker">How I got here</p>
+          <h2 id="education-heading" className="certifications-heading">Education</h2>
+        </div>
+        <div className="edu-grid">
+          {education.map((item) => (
+            <article className="edu-card" key={item.qualification} data-aos="fade-up">
+              <h3>{item.qualification}</h3>
+              <p className="cert-date">{item.institution} · {item.period}</p>
+              <p>{item.detail}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="certifications-section" aria-labelledby="certifications-heading" data-aos="fade-up">
+        <div className="detail-section-head">
+          <p className="section-kicker">Verified credentials</p>
+          <h2 className="certifications-heading" id="certifications-heading">Certifications</h2>
+        </div>
+        <div className="cert-grid">
+          {certifications.map((cert) => (
+            <article className="cert-card" key={cert.name}>
+              <div className="cert-card-top">
+                <span className="cert-tag">{cert.tag}</span>
+                <span className="cert-date">{cert.date}</span>
+              </div>
+              <h3>{cert.name}</h3>
+              <p className="cert-issuer">{cert.issuer}</p>
+              <p className="cert-detail">{cert.detail}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="detail-section" aria-labelledby="training-heading">
+        <div className="detail-section-head">
+          <p className="section-kicker">Applied learning</p>
+          <h2 className="certifications-heading" id="training-heading">Professional training</h2>
+        </div>
+        <ul className="training-list" data-aos="fade-up">
+          {training.map((item) => (
+            <li key={item.name}>
+              <strong>{item.name}</strong> — {item.provider}, {item.date}. {item.detail}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="detail-section" aria-labelledby="skills-heading">
+        <div className="detail-section-head">
+          <p className="section-kicker">What I work with</p>
+          <h2 className="certifications-heading" id="skills-heading">Technical and soft skills</h2>
+        </div>
+
+        <div className="skill-category-grid" data-aos="fade-up">
+          {technicalSkills.map((group) => (
+            <article className="skill-category" key={group.category}>
+              <h3>{group.category}</h3>
+              <div className="chip-list">
+                {group.items.map((item) => <span className="chip" key={item}>{item}</span>)}
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <h3 className="detail-subheading soft-heading">Soft skills</h3>
+        <div className="soft-grid" data-aos="fade-up">
+          {softSkills.map((skill) => (
+            <article className="soft-card" key={skill.name}>
+              <h4>{skill.name}</h4>
+              <p>{skill.detail}</p>
+            </article>
+          ))}
+        </div>
+
+        <h2 className="SkillsHeading" data-aos="fade-up">Technology grid</h2>
+        <div className="skills" data-aos="fade-up">
+          {skillIcons.map((skill) => <Skills skill={skill} key={skill} />)}
+        </div>
+      </section>
     </>
   );
 }
